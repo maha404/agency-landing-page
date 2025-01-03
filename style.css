@@ -150,3 +150,16 @@ ul a:link {
     );
     
 }
+
+.textLinkStandOut {
+    color: hsl(212, 27%, 19%);
+    text-decoration: none;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    padding: 0 0.5rem 0 0.5rem;
+    background: no-repeat linear-gradient(
+        to bottom, 
+        transparent 70%, 
+        #FFDCD3 50%
+    );
+}
