@@ -243,7 +243,7 @@ ul a:link {
 }
 
 .personContainer img {
-    width: 15%;
+    width: 3.5rem;
     border-radius: 2rem;
 }
 
@@ -268,4 +268,15 @@ ul a:link {
     font-weight: 500;
     color: hsl(210, 4%, 67%);
     margin: 0;
+}
+
+.imageGallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5rem;
+}
+
+.imageGallery div img {
+    width: 100%;
+    display: block;
 }
