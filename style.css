@@ -96,12 +96,12 @@ nav {
     width: 100%;
 }
 
-ul a:link {
+.navLinks a:link {
     text-decoration: none;
     color: hsl(232, 10%, 55%);
 }
 
- ul a:last-child {
+.navLinks a:last-child {
     background-color: hsl(51, 100%, 49%);
     align-self: center;
     width: 50%;
@@ -279,4 +279,40 @@ ul a:link {
 .imageGallery div img {
     width: 100%;
     display: block;
+}
+
+footer {
+    background-color: #90D4C5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.footerLinks {
+    display: flex;
+    column-gap: 2.5rem;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    font-family: "Barlow", serif; 
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+.footerLinks a:link,
+.footerLinks a:visited {
+    text-decoration: none;
+    color: hsl(168, 34%, 41%);
+}
+
+.iconContainer {
+    display: flex;
+    column-gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.iconContainer img {
+    width: 1rem;
+    
 }
