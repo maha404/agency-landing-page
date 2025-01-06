@@ -227,11 +227,12 @@ nav {
     margin-top: 3rem;
 }
 
-.clientContainer h2 {
+.testimonialsTitle {
     font-family: "Fraunces", serif;
     font-size: 0.9rem;
     letter-spacing: 0.2rem;
     color: hsl(210, 4%, 67%);
+    text-align: center;
 }
 
 .personContainer {
@@ -315,4 +316,94 @@ footer {
 .iconContainer img {
     width: 1rem;
     
+}
+
+@media all and (min-width: 768px) {
+
+    header {
+        height: 62.2rem;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        justify-content: start;
+    }
+
+    .navMenu {
+        display: block;
+        position: relative;
+        background-color: transparent;
+
+    }
+
+    .navMenu ul {
+        flex-direction: row;
+        column-gap: 3.5rem;
+        align-items: center;
+        justify-content: end;
+        font-family: "Barlow", serif;
+    }
+
+    .navLinks a:link, 
+    .navLinks a:visited {
+        color: #D1FFFF;
+    }
+
+    .navLinks a:last-child {
+        background-color: white;
+        width: 6%;
+        color: black;
+        font-family: "Fraunces", serif;
+        border-radius: 2rem;
+        padding: 1rem 1.7rem 1rem 1.7rem;
+        font-size: 1rem;
+    }
+
+    
+
+    .title {
+        font-size: 5rem;
+        margin-top: 7rem;
+        font-family: "Fraunces", serif;
+    }
+
+    .arrowIcon {
+        width: 3%;
+        margin-top: 4rem;
+    }
+    
+    .eggContainer {
+        display: flex;
+        flex-direction:row-reverse;
+        
+    }
+
+    .mugContainer {
+        display: flex;
+    }
+
+    .infoContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .testimonialsTitle {
+        font-size: 1rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .clientContainer {
+        flex-direction: row;
+        
+    }
+
+    .imageGallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
 }
