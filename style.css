@@ -5,7 +5,6 @@ body {
 header {
     margin: 0;
     padding: 0;
-    height: 28.7rem;
 }
 
 nav {
@@ -70,26 +69,30 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 1rem;
+    position: absolute;
 }
 
 .title {
     color: white;
     font-family: "Fraunces", serif;
     text-align: center;
+    text-wrap: balance;
     letter-spacing: 0.3rem;
     font-size: 2.3rem;
+    z-index: -1;
 }
 
 .arrowIcon {
     width: 10%;
+    z-index: -1;
 }
 
 .headerImg {
     width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: -1;
+    display: block;
+    position: relative;
+    top: -5rem;
+    z-index: -2;
 }
 
 .eggImg {
@@ -322,10 +325,6 @@ footer {
 /* Desktop media queries ----------------------------------> */
 @media all and (min-width: 768px) {
 
-    header {
-        height: 62.2rem;
-    }
-
     #hamburger {
         display: none;
     }
@@ -337,13 +336,16 @@ footer {
     nav {
         justify-content: start;
         align-items: normal;
+        position: absolute;
+        width: 96%;
     }
 
     .navMenu {
         display: block;
-        position: relative;
+        position: absolute;
         justify-content: center;
         background-color: transparent;
+        z-index: 1;
     }
 
     .navMenu ul {
@@ -359,7 +361,7 @@ footer {
         color: #D1FFFF;
     }
 
-    .navLinks a:last-child {
+    /* .navLinks:last-child {
         background-color: white;
         width: 6%;
         color: black;
@@ -367,15 +369,23 @@ footer {
         border-radius: 2rem;
         padding: 1rem 1.7rem 1rem 1.7rem;
         font-size: 1rem;
+    } */
+
+    .triangle {
+        display: none;
+    }
+
+    .title-container {
+        top: 10rem;
+        left: 27%;
     }
 
     .title {
         font-size: 5rem;
-        margin-top: 7rem;
     }
 
     .arrowIcon {
-        width: 2.5%;
+        width: 5%;
         margin-top: 1rem;
     }
 
